@@ -6,7 +6,7 @@ def employees_rewrite(sort_type):
     with open('employees.json', 'r') as file:
         json_data = json.load(file)  # -> dict
 
-        # приводим входное слово к  нижнему регистру и прописываем рег.выраж для того же в  искомом файле
+
         sort_type = sort_type.lower()
         pattern = 'n'
         if sort_type == 'lastname' or sort_type == 'firstname':
